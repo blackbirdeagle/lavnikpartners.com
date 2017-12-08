@@ -82,6 +82,16 @@ h1{
 	margin-bottom: 35px;
 }
 
+h3{
+	font-size: 24px;
+	color: #a18c6f;
+}
+
+a{
+	color: #1d2429;
+
+}
+
 .container{
 	padding-left: 80px;	
 	position: relative;
@@ -200,6 +210,15 @@ h1{
 	display: block;	
 }
 
+.header__menu li a:hover{
+	color: #ebdac1;
+	text-decoration: none;
+}
+
+.header__menu li a.active{
+	color: #ebdac1;
+}
+
 .header__menu li:first-child a{
 	padding-lefT: 0;	
 }
@@ -273,7 +292,7 @@ h1{
 }
 
 .quest__form{
-	padding: 70px 0 40px 0;
+	padding: 30px 0 40px 0;
 	background-image: url(images/bg.jpg);
 }
 
@@ -441,6 +460,81 @@ h1{
 .hide__menu:hover{
 	text-decoration: none;
 }
+
+.history{
+	overflow: hidden;
+	position: relative;
+}
+
+.vertical__line{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;	
+	left: 50%;
+	background-color: #a18c6f;
+}
+
+.history__item{
+	position: relative;
+	width: 48%;
+	border: 1px solid #a18c6f;
+	padding: 28px 38px;
+	margin-bottom: 198px;
+}
+
+.history__item:last-child{
+	margin-bottom: 0;
+}
+
+.history__item__left{
+	float: left;
+}
+
+.history__item__right{
+	float: right;
+}
+
+.history__item p{
+	font-size: 16px;
+	color: #1d2429;
+	margin-bottom: 34px;
+}
+
+.history__item p:last-child{
+	margin-bottom: 0;
+}
+
+.history__item__head{
+	font-size: 35px !important;
+	color: #a18c6f !important;
+	font-family: 'Times New Romans' !important;
+}
+
+.history__item__right1{
+	margin-top: 86px;
+}
+
+.circle_img{
+	position: absolute;
+	top: -7px;
+}
+
+.history__item__left .circle_img{
+	right: -27px;
+}
+
+.history__item__right .circle_img{
+	left: -27px;
+}
+
+.quest__form__decor{
+	height: 12px;
+	background-image: url(images/decor.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 55px;
+}
 /*---------------ПОПАП------------------*/
 .overlay {
     display: none;
@@ -524,6 +618,112 @@ h1{
 	text-decoration: none;
 	color: #000;
 }
+
+.content__text p{
+	font-size: 16px;
+	color: #1d2429;
+	margin-bottom: 27px;
+}
+
+.work__slogan{
+	border-left: 1px solid #a18c6f;
+	padding-left: 42px;	
+	margin-bottom: 27px;
+	padding-right: 76px;
+}
+
+.work__slogan p{
+	font-family: 'Times New Romans';
+	font-size: 35px;
+	color: #a18c6f;
+	line-height: 1;
+}
+
+.vac a{
+	display: block;
+	font-size: 18px;
+	color: #1c2328;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #a18c6f;
+}
+
+.vac a:hover{
+	text-decoration: none;
+}
+
+.vac div{
+	display: none;	
+}
+
+.vac__head{
+	font-size: 18px !important;
+	color: #1b2227;
+	margin-bottom: 12px !important;
+}
+
+.vac__text{
+	font-size: 16px;
+}
+
+.team__face{
+	padding: 0 102px;	
+	margin-top: 30px;
+}
+
+.team__face__item{
+	padding: 9px;
+	border: 1px solid #a18c6f;
+	text-align: center;
+	margin-bottom: 34px;
+}
+
+.team__face__item img{
+	width: 100%;
+}
+
+.team__face__item__name{
+	font-size: 18px ;
+	color: #a18c6f ;
+	font-family: 'Times New Romans';
+	margin-bottom: 0px ;
+}
+
+.team__face__item__text{
+	margin-bottom: 0 ;
+	font-size: 14px ;	
+}
+
+.team__face__item__post{
+	font-size: 16px ;
+	margin-bottom: 12px ;
+	background-image: url(images/b_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 12px;
+}
+
+.video img{
+	width: 100%;
+}
+
+.video__info{
+	margin-top: 32px;	
+}
+
+.video__info__name{
+	font-size: 24px;
+	color: #a18c6f;
+}
+
+.video__info__post{
+	font-size: 16px;
+	color: #1d2429;
+}
+
+.video__info__text{
+	font-size: 16px;
+	color: #1d2429;	
+}
 /*-----------------------Адаптив---------------------*/
 @media(max-width: 1199px){
 	.header__phone{
@@ -534,6 +734,14 @@ h1{
 	.footer__right{
 		width: 45%;
 	}
+	
+	.history__item__left .circle_img {
+		right: -25px;
+	}
+
+	.history__item__right .circle_img {
+		left: -22px;
+	}	
 }
 
 @media(max-width: 991px){
@@ -549,6 +757,18 @@ h1{
 		float: none;
 		width: 138px;
 		margin: 0 auto 10px auto;
+	}
+	
+	.history__item__left .circle_img {
+		right: -20px;
+	}
+
+	.history__item__right .circle_img {
+		left: -18px;
+	}	
+	
+	.team__face{
+		padding: 0;
 	}
 }
 
@@ -572,6 +792,39 @@ h1{
 	
 	.quest__form input{
 		margin-bottom: 15px;
+	}
+	
+	.circle_img{
+		display: none;
+	}
+	
+	.vertical__line{
+		display: none;
+	}
+	
+	.history__item__left{
+		float: none;
+	}
+	
+	.history__item__right{
+		float: none;
+	}
+	
+	.history__item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.history__item__right1{
+		margin-top: 0;
+	}
+	
+	.vac{
+		margin-bottom: 30px;
+	}
+	
+	.video__info__post{
+		margin-bottom: 20px;
 	}
 }
 
