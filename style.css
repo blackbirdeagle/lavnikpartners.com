@@ -210,13 +210,17 @@ h1{
 }
 
 .content{
-	padding: 20px 45px;
+	padding: 20px 0 45px 0;
 }
 
 .trg{
 	position: absolute;
 	top: -50px;
 	left: 125px;
+}
+
+.contacts{
+	margin-bottom:20px;
 }
 
 .contacts__head{
@@ -392,6 +396,51 @@ h1{
 .footer__left ul li:last-child{
 	margin-right: 0;
 }
+
+.left__menu{
+	position: fixed;
+	left: -300px;
+	top: 0;
+	width: 300px;
+	background-image: url(images/bg.jpg);
+	height: 100%;
+	z-index: 989;
+	border: 2px solid #a18c6f;
+	border-left: 0;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.left__menu ul li{
+	margin-bottom: 15px;	
+}
+
+.left__menu ul li a{
+	color: #a18c6f;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.sub_ul{
+	margin-left: 30px;
+}
+
+.sub_ul li a{
+	font-size: 16px !important;
+}
+
+.hide__menu{
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 16px;
+	color: #a18c6f;
+}
+
+.hide__menu:hover{
+	text-decoration: none;
+}
 /*---------------ПОПАП------------------*/
 .overlay {
     display: none;
@@ -414,19 +463,21 @@ h1{
     position: absolute;
     padding: 38px;
 	border-radius: 4px;
+	border: 2px solid #a18c6f;
+	background-image: url(images/bg.jpg);
 }
 
 .close1 {
     float: right;
     font-size: 21px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
+    color: #a18c6f;
 	right: 28px;
 	top: 16px;
 	position: absolute;
+}
+
+.close1 :hover{
+	text-decoration: none;
 }
 
 .head__remark{
@@ -434,12 +485,14 @@ h1{
 	text-transform: uppercase;
 	font-size: 16px;
 	margin-bottom: 10px;
+	color: #fff;
 }
 
 .popup .head{
 	text-align: center;
 	font-size: 20px;
 	margin-bottom: 28px;
+	color: #fff;
 }
 
 .popup input{
@@ -453,7 +506,165 @@ h1{
 	margin-bottom: 18px;
 }
 
+
+.send_mess{
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: #a18c6f;
+    color: #000;
+    padding-top: 2px;
+	margin: 0 auto;
+}
+
+.send_mess:hover{
+	text-decoration: none;
+	color: #000;
+}
 /*-----------------------Адаптив---------------------*/
 @media(max-width: 1199px){
+	.header__phone{
+		margin-top: 3px;
+		margin-left: 114px;
+	}
+	
+	.footer__right{
+		width: 45%;
+	}
+}
 
+@media(max-width: 991px){
+	.social{
+		margin-top: 14px;
+	}
+	
+	.messengers{
+		margin-top: 14px;
+	}
+	
+	.footer__left{
+		float: none;
+		width: 138px;
+		margin: 0 auto 10px auto;
+	}
+}
+
+@media(max-width: 767px){
+	.contacts__head{
+		float: left;
+		margin-right: 5px;
+	}
+	
+	.company{
+		display: none;
+	}
+	
+	.header__menu{
+		display: none;
+	}
+	
+	.no__car__list{
+		margin-bottom: 40px;
+	}
+	
+	.quest__form input{
+		margin-bottom: 15px;
+	}
+}
+
+@media(max-width: 691px){
+	.social{
+		float: none;
+		width: 90px;
+	}
+	
+	.messengers{
+		border-left: 1px solid #a18c6f;
+	}
+	
+	.header__phone{
+		margin-top: -30px;
+	}
+}
+
+@media(max-width: 648px){
+	.footer__right{
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	
+	.footer__center{
+		float: none;
+		width: 305px;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 600px){
+	.col-logo{
+		width: 100%;
+	}
+	
+	.col-addr{
+		width: 100%;
+	}
+	
+	.container{
+		padding-left: 15px;
+	}
+	
+	.header__logo{
+		display: block;
+		width: 204px;
+		margin: 0 auto;
+	}
+	
+	.header__logo img{
+		width: 100%;
+	}
+	
+	.trg{
+		left: 50%;
+		margin-left: -19px;
+	}
+}
+
+@media(max-width: 537px){
+	.messengers{
+		float: none;
+		width: 202px;
+	}
+	
+	.header__phone{
+		float: none;
+		margin-top: -70px;
+	}
+}
+
+@media(max-width: 360px){
+	.header__phone{
+		margin-top: 0;
+		margin-left: 0;	
+	}
+	
+	.header__phone__link{
+		text-align: center;
+	}
+	
+	.header__phone a{
+		text-align: center;
+	}
+	
+	.social{
+		margin: 13px auto;
+	}
+	
+	.messengers{
+		margin: 13px auto;
+	}
 }

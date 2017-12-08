@@ -51,6 +51,18 @@ function keyExit(e){
 }
 
 addEventListener("keydown", keyExit);
+
+$('.float__menu').click(function(){
+	$('.left__menu').animate({left: 0}, 300);
+});
+
+$('.hide__menu').click(function(){
+	$('.left__menu').animate({left: -300}, 300);
+});
+
+jQuery(function(){
+	jQuery(".phone").mask("+7(999) 999-9999");
+});
 /*
 var myMap;
 
