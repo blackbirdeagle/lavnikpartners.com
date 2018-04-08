@@ -78,8 +78,8 @@ jQuery(function(){
 });
 
 $('.send_quest').click(function(){
-	var quest = $('.quest__form input[name = "quest"]').val();
-	var email = $('.quest__form input[name = "email"]').val();
+	var quest = $('#quest2').val();
+	var email = $('#email2').val();
 	var check = $('.politik').attr('check');
 	var flag = 0;
 	
@@ -87,17 +87,17 @@ $('.send_quest').click(function(){
 	$('.politik').css({"border":"none"});
 	
 	if(quest == ""){
-		$('.quest__form input[name = "quest"]').css({"border":"1px solid red"});
+		$('#quest2').css({"border":"1px solid red"});
 		flag = 1;
 	}
 	
 	if(email == ""){
-		$('.quest__form input[name = "email"]').css({"border":"1px solid red"});
+		$('#email2').css({"border":"1px solid red"});
 		flag = 1;
 	}
 	
 	if(email != "" && !isEmailValid(email)){
-		$('.quest__form input[name = "mail"]').css({"border":"1px solid red"});
+		$('#email2').css({"border":"1px solid red"});
 		flag = 1;
 	}
 	
@@ -111,26 +111,208 @@ $('.send_quest').click(function(){
 	}
 });
 
-$('.send_mess').click(function(){
-	var name = $('.popup input[name = "name"]').val();
-	var phone = $('.popup input[name = "phone"]').val();
+$('.send_quest2').click(function(){
+	var quest = $('#quest1').val();
+	var email = $('#email1').val();
+	var phone = $('#phone1').val();
+	var check = $('.politik2').attr('check');
 	var flag = 0;
 	
-	$('.popup input').css({"border":"none"});
+	$('.quest__form input').css({"border":"1px solid #a18c6f"});
+	$('.politik2').css({"border":"none"});
 	
-	if(name == ""){
-		$('.popup input[name = "name"]').css({"border":"1px solid red"});
+	if(quest == ""){
+		$('#quest1').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(email == ""){
+		$('#email1').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(email != "" && !isEmailValid(email)){
+		$('#email1').css({"border":"1px solid red"});
 		flag = 1;
 	}
 	
 	if(phone == ""){
-		$('.popup input[name = "phone"]').css({"border":"1px solid red"});
+		$('#phone1').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(check == "no"){
+		$('.politik2').css({"border":"1px solid red"});
 		flag = 1;
 	}
 	
 	if(flag == 0){
 		
 	}
+});
+
+$('.send_mess').click(function(){
+	var name = $('.usagr-pp input[name = "name"]').val();
+	var phone = $('.usagr-pp input[name = "phone"]').val();
+	var check = $('.politik3').attr('check');
+	var flag = 0;
+	
+	$('.usagr-pp input').css({"border":"none"});
+	$('.politik3').css({"border":"none"});
+	if(name == ""){
+		$('.usagr-pp input[name = "name"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(phone == ""){
+		$('.usagr-pp input[name = "phone"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(check == "no"){
+		$('.politik3').css({"border":"1px solid red"});
+		flag = 1;
+	}	
+	
+	if(flag == 0){
+		
+	}
+});
+
+$('.send_order').click(function(){
+	var name = $('.order-pp input[name = "name"]').val();
+	var phone = $('.order-pp input[name = "phone"]').val();
+	var email = $('.order-pp input[name = "email"]').val();
+	var check = $('.politik4').attr('check');
+	var flag = 0;
+	
+	$('.order-pp input').css({"border":"none"});
+	$('.politik4').css({"border":"none"});
+	if(name == ""){
+		$('.order-pp input[name = "name"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(phone == ""){
+		$('.order-pp input[name = "phone"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(email == ""){
+		$('.order-pp input[name = "email"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(email == "" && !isEmailValid(email)){
+		$('.order-pp input[name = "email"]').css({"border":"1px solid red"});
+		flag = 1;
+	}
+	
+	if(check == "no"){
+		$('.politik4').css({"border":"1px solid red"});
+		flag = 1;
+	}	
+	
+	if(flag == 0){
+		
+	}
+});
+
+$('.fancybox').fancybox({
+	openEffect  : 'none',
+	closeEffect : 'none',
+	helpers : {
+		media : {},
+		overlay: { 
+			locked: false 
+		}
+	}
+});
+
+$('.questions ul li a').click(function(){
+	$('.questions ul li p').hide();
+	$(this).siblings('p').fadeIn(200);
+});
+
+$(document).ready(function(){
+    $("#slider__staff").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:1
+			},			
+			600:{
+				items:2
+			},
+			991:{
+				items:3
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: true,
+		nav: true,
+		navText: ['<img src = "images/prev.png" alt = ""/>', '<img src = "images/next.png" alt = ""/>'],
+		
+    });
+	
+    $("#slider__news").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:1
+			},			
+			600:{
+				items:1
+			},
+			991:{
+				items:1
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: false,
+		nav: true,
+		navText: ['<img src = "images/prev.png" alt = ""/>', '<img src = "images/next.png" alt = ""/>'],
+		
+    });	
+	
+    $("#slider__sert").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:2
+			},			
+			600:{
+				items:2
+			},
+			991:{
+				items:3
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: false,
+		nav: true,
+		navText: ['<img src = "images/prev.png" alt = ""/>', '<img src = "images/next.png" alt = ""/>'],
+		
+    });		
+	
 });
 /*
 var myMap;
