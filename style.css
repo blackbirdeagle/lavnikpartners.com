@@ -205,6 +205,7 @@ a{
 
 .header__menu{
 	overflow: hidden;
+	margin-top: 14px;
 }
 
 .header__menu li{
@@ -957,6 +958,23 @@ a{
 	color: #1d2429;
 	padding: 10px 0;
 	border-bottom: 1px solid #d3c2aa;
+	line-height: 1 !important;
+}
+
+.price__list__item__text p span{
+	font-size: 16px;
+	color: #1d2429;
+}
+
+.price__list__item__text p.text{
+	font-size: 16px;
+	color: #1d2429;
+	border-bottom: none;
+	line-height: 1.5 !important;
+}
+
+.price__list__item__buch{
+	min-height: 400px;	
 }
 
 .price__list__item__text a{
@@ -1101,10 +1119,155 @@ a{
 	margin-bottom: 32px;
 }
 
+.seo__text p{
+	margin-bottom: 20px;
+}
+
 .content__text__wrapp p img{
 	float: left;
-	margin-right: 10px;
+	margin-right: 20px;
 	margin-bottom: 10px;
+	margin-top: 7px;
+}
+
+.tarify__item{
+	border-bottom: 1px solid #a18c6f;
+	padding-bottom: 17px;
+	margin-top: 22px;
+}
+
+.tarify__item__name{
+	font-size: 24px;
+	color: #1c2328;
+}
+
+.tarify__item__text{
+	font-size: 16px;
+	color: #1b2227;
+}
+
+.tarify{
+	padding: 30px 0;
+}
+
+.tarify__item__price{
+	font-size: 16px;
+	color: #a18c6f;
+}
+
+.tarify__item__order{
+	display: block;
+	text-align: center;
+	height: 52px;
+	background-color: #ebdac1;
+	font-size: 20px;
+	color: #1c2328 !important;
+	border-radius: 26px;
+	padding-top: 11px;
+	transition: 0.5s;
+	box-shadow: 0px 5px 10px #000;
+	margin-top: 49px;
+	width: 246px;
+}
+
+.tarify__item__order:hover{
+	text-decoration: none;
+	box-shadow: none;
+}
+
+.tarify__item__price__wrap{
+	margin-top: 58px;
+}
+
+.calculator__yur__item{
+	border-bottom: 1px solid #a18c6f;
+	padding-bottom: 17px;
+	margin-top: 22px;	
+}
+
+.calculator__yur__item input{
+	width: 17px;
+	height: 17px;
+	cursor:pointer;
+}
+
+.tarif__label{
+	display: block;
+	font-size: 24px;
+	color: #a18c6f;
+}
+
+.summa__paketa{
+	font-size: 60px;
+	color: #a18c6f;
+	font-family: 'Times New Romans';
+}
+
+.summa__paketa span{
+	font-size: 24px;
+}
+
+.order__paket{
+	margin-top: 14px;
+}
+
+.document__excel{
+	background-image: url(images/excel.png);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	font-size: 16px;
+	color: #1c2328 !important;
+	text-decoration: underline;
+    padding: 9px 0 9px 50px;	
+	display: block;
+	margin-top: 20px;
+}
+
+.document__excel:hover{
+	text-decoration: none;
+	color: #1c2328 !important;
+}
+
+.solutions__list{
+	margin-bottom: 90px;	
+}
+
+.solutions__list__item{
+	margin-top: 30px;
+	padding-bottom: 30px;	
+	border-bottom: 1px solid #a18c6f; 	
+}
+
+.solutions__list__item__name{
+	color: #fff;
+	font-size: 24px;
+}
+
+.get__answer{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	background-color: #a18c6f;
+	border-radius: 9px;
+	height: 30px;
+	padding-top: 2px;
+	transition: 0.5s;
+}
+
+.get__answer:hover{
+	text-decoration: none;
+	color: #000;
+	background-color: #a79a88;
+}
+
+.tarify__order__1c{
+	margin-top: 0;
+}
+
+.tarify__list{
+	margin-bottom: 40px;
 }
 /*-----------------------Адаптив---------------------*/
 @media(max-width: 1199px){
@@ -1175,6 +1338,14 @@ a{
 	
 	.news__item p{
 		margin-bottom: 20px;
+	}
+	
+	.tarify__item__price__wrap {
+		margin-top: 38px;
+	}	
+	
+	.header__adv__block h1{
+		padding-top: 15px;
 	}
 }
 
@@ -1330,6 +1501,9 @@ a{
 		display: block;
 	}
 	
+	.specialisty{
+		padding-lefT: 0;
+	}
 }
 
 @media(max-width: 537px){
@@ -1346,6 +1520,13 @@ a{
 	#slider__news {
 		padding: 0 0px 30px 0px;
 	}	
+}
+
+
+@media(max-width: 500px){
+	.summa__paketa{
+		font-size: 40px;
+	}
 }
 
 @media(max-width: 480px){
@@ -1377,6 +1558,10 @@ a{
 	.col-price{
 		width: 100%;
 	}
+	
+	.summa__paketa{
+		font-size: 28px;
+	}	
 }
 
 @media(max-width: 360px){

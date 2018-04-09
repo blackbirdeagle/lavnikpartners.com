@@ -234,6 +234,24 @@ $('.questions ul li a').click(function(){
 	$(this).siblings('p').fadeIn(200);
 });
 
+$('.get__answer').click(function(){
+	var id = $(this).attr('field');
+	var email = $('#' + id).val();
+	var flag = 0;
+	
+	$('#' + id).css({"border":"1px solid #a18c6f"});
+	
+	if(email == ""){
+		$('#' + id).css({"border":"1px solid red"});
+		flag = 1;
+	}	
+	
+	if(email != "" && !isEmailValid(email)){
+		$('#' + id).css({"border":"1px solid red"});
+		flag = 1;
+	}	
+});
+
 $(document).ready(function(){
     $("#slider__staff").owlCarousel({
         responsive:{ 
@@ -342,17 +360,6 @@ $(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
-});
-
-$('.fancybox').fancybox({
-	openEffect  : 'none',
-	closeEffect : 'none',
-	helpers : {
-		media : {},
-		overlay: { 
-			locked: false 
-		}
-	}
 });
 
 
