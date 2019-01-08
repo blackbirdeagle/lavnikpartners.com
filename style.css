@@ -863,6 +863,12 @@ a{
 	margin-bottom: 13px;
 }
 
+.index__slider__slogan h1{
+	font-size: 50px;
+	line-height: 1;
+	margin-bottom: 13px;	
+}
+
 .show__order{
 	display: block;
 	width: 244px;
@@ -886,6 +892,13 @@ a{
 	font-size: 30px;
 	color: #a18c6f;
 	line-height: 1;
+}
+
+.index__slider__slogan p{
+	font-family: 'Times New Romans';
+	font-size: 30px;
+	color: #a18c6f;
+	line-height: 1;	
 }
 
 .header__adv__block__wrapper{
@@ -1027,6 +1040,7 @@ a{
 
 .slider__staff{
 	margin-top: -35px;
+	margin-bottom: -14px;
 }
 
 .slider__news{
@@ -1269,6 +1283,240 @@ a{
 .tarify__list{
 	margin-bottom: 40px;
 }
+
+.new__item{
+	padding: 5px;
+	border: 1px solid #a59175;	
+	min-height: 504px;
+	margin-bottom: 30px;
+}
+
+.new__item img{
+	width: 100%;
+}
+
+.new__item__date{
+	color: #1d2429;
+	font-size: 16px;
+}
+
+.new__item__name{
+	font-size: 24px;
+	color: #a18c6f;
+	line-height: 1;
+	margin-top: 3px;
+	display: block;
+}
+
+.new__item__name:hover{
+	color: 	#a18c6f;
+}
+
+.new__item article{
+	padding: 0 15px 15px 15px;
+}
+
+.new__item__text{
+	font-size: 16px;
+	color: #1d2429;
+	margin-top: 3px;
+}
+
+.paginavi{
+	overflow: hidden;
+	position:absolute;
+}
+
+.paginavi li{
+	float: left;
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+	display: block;
+	font-size: 16px;
+	text-align: center;	
+}
+
+.paginavi li.active{
+	border-radius: 50%;
+	background-color: #a18c6f;
+	color: #fff;
+}
+
+.paginavi li a{
+	border: none;
+	color: #1d2429;
+}
+
+.pagi__wrap{
+	position: relative;
+	padding: 10px 0;
+}
+
+.part__item{
+	padding: 19px;
+	border: 1px solid #a18c6f;
+	min-height: 451px;
+	margin-bottom: 30px;
+}
+
+#slider__partners1{
+	padding-left: 100px;
+	margin-top: 80px;
+}
+
+#slider__partners1 .owl-item{
+	
+}
+
+#slider__partners1 .owl-item img{
+	width: 156px;
+	margin: 0 auto;
+	display: block;
+}
+
+.part__item__text{
+	color: #1d2429;
+	margin-top: 5px;
+}
+
+.owl-dot span{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #a18c6f;
+	display: block;
+}
+
+.owl-dots{
+	overflow: hidden;
+	position: absolute;
+}
+
+.owl-dots .owl-dot{
+	float: left;
+	margin-right: 5px;
+}
+
+.owl-dots .owl-dot:last-child{
+	margin-right: 0;
+}
+
+.owl-dots .owl-dot.active span{
+	background-color: black;
+}
+
+.owl-carousel{
+	position: relative;
+}
+
+#slider__awards{
+	padding-left: 100px;
+	margin-top: 80px;
+}
+
+#slider__staff .owl-dots .owl-dot.active span{
+	background-color: #fff;
+}
+
+.awards__item{
+	margin-bottom: 30px;
+	padding: 19px;
+	border: 1px solid #a18c6f;
+}
+
+.index__slider__slogan{
+	margin-top: 20px;
+}
+
+.cnown__link{
+	text-align: center;
+	display: block;
+	border-radius: 25px;
+	color: #1c2328;
+	font-size: 22px;
+	background: linear-gradient(to top, #a28d70, #f3e3cc);
+	height: 52px;
+	width: 242px;
+	padding-top: 9px;
+	margin-top: 107px;
+	box-shadow: 0 5px 10px #000;
+	transition: 0.5s;
+}
+
+.cnown__link:hover{
+	box-shadow: none;
+	color: #1c2328;
+	text-decoration: none;
+}
+
+.index__slider__img{
+	margin-top: 70px;
+}
+
+.index__slider__img img{
+	width: 100%;
+}
+
+.adv__slide{
+	margin-top: 88px;	
+}
+
+.adv__slide__item{
+	margin-bottom: 25px;
+}
+
+.adv__slide__item p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.adv__slide__item p span{
+	color: #a18c6f;
+	font-size: 60px;
+	font-family: 'Times New Romans';
+}
+
+.company__to__day__head{
+	color: #a18c6f;
+	font-size: 35px;
+	font-family: 'Times New Romans';
+	margin-top: 80px;
+}
+
+.company__to__day p{
+	color: #fff;
+	font-size: 16px;
+}
+
+.company__to__day{
+	padding-lefT: 100px;
+	padding-right: 100px;
+	margin-bottom: 50px;
+}
+
+#index__slider .owl-dots .owl-dot.active span{
+	background-color: #fff;
+}
+
+#index__slider .owl-dots{
+	position: relative !important;
+}
+
+.company__to__day a{
+	color: #ebdac1;
+	font-size: 16px;
+	margin-top: 30px;
+	display: block;	
+	text-decoration: underline;
+}
+
+.company__to__day a:hover{
+	color: #ebdac1;
+	text-decoration: none;
+}
 /*-----------------------Адаптив---------------------*/
 @media(max-width: 1199px){
 	.header__phone{
@@ -1290,6 +1538,10 @@ a{
 	
 	.company__to__day__item__num{
 		font-size: 45px !important;
+	}
+	
+	.new__item{
+		min-height: 557px;
 	}
 }
 
@@ -1346,6 +1598,22 @@ a{
 	
 	.header__adv__block h1{
 		padding-top: 15px;
+	}
+	
+	.new__item {
+		min-height: 560px;
+	}	
+	
+	.part__item{
+		min-height: 441px;
+	}
+	
+	#slider__partners1{
+		padding-left: 0;
+	}
+	
+	#slider__awards{
+		padding-left: 0;
 	}
 }
 
@@ -1503,6 +1771,10 @@ a{
 	
 	.specialisty{
 		padding-lefT: 0;
+	}
+	
+	.col-news{
+		width: 100%;
 	}
 }
 

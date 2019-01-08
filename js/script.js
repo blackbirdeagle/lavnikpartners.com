@@ -252,6 +252,20 @@ $('.get__answer').click(function(){
 	}	
 });
 
+var leftP = $('.pagi__wrap').width() / 2 - $('.paginavi').width() / 2;
+$('.paginavi').css('left', leftP);
+
+var leftD = $('.owl-carousel').width() / 2 - $('.owl-dots').width() / 2;
+$('.owl-dots').css('left', leftD);
+
+$(window).resize(function(){
+	var leftP = $('.pagi__wrap').width() / 2 - $('.paginavi').width() / 2;
+	$('.paginavi').css('left', leftP);	
+	
+	var leftD = $('.owl-carousel').width() / 2 - $('.owl-dots').width() / 2;
+	$('.owl-dots').css('left', leftD);	
+});
+
 $(document).ready(function(){
     $("#slider__staff").owlCarousel({
         responsive:{ 
@@ -331,6 +345,83 @@ $(document).ready(function(){
 		
     });		
 	
+    $("#slider__partners1").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:1
+			},			
+			600:{
+				items:1
+			},
+			991:{
+				items:1
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: true,
+		nav: false,
+		navText: ['', ''],
+		
+    });	
+
+    $("#slider__awards").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:1
+			},			
+			600:{
+				items:1
+			},
+			991:{
+				items:1
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: true,
+		nav: false,
+		navText: ['', ''],
+		
+    });	
+
+    $("#index__slider").owlCarousel({
+        responsive:{ 
+			0:{
+				items:1
+			},
+			570:{
+				items:1
+			},			
+			600:{
+				items:1
+			},
+			991:{
+				items:1
+			}		
+		},
+		margin: 30,
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 3000,
+		touchDrag: true,	
+		dots: true,
+		nav: true,
+		navText: ['<img src = "images/prev.png" alt = ""/>', '<img src = "images/next.png" alt = ""/>'],
+		
+    });	
 });
 /*
 var myMap;
